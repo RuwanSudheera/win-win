@@ -6,6 +6,8 @@ import QuestionDetails from './components/question/QuestionDetails'
 import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
 import CreateQuestion from './components/question/CreateQuestion'
+import QuestionPaper from "./components/examination/QuestionPaper";
+import Result from "./components/result/Result";
 
 class App extends Component {
   render() {
@@ -13,12 +15,16 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar />
+
           <Switch>
             <Route exact path='/'component={Dashboard} />
             <Route path='/Question/:id' component={QuestionDetails} />
             <Route path='/signin' component={SignIn} />
             <Route path='/signup' component={SignUp} />
             <Route path='/create' component={CreateQuestion} />
+            <Route path='/examination' component={QuestionPaper} />
+            <Route path='/result' component={Result} />
+            <Route path='/*' component={Dashboard} />
           </Switch>
         </div>
       </BrowserRouter>

@@ -15,21 +15,20 @@ const Navbar = (props) => {
     <nav className="nav-wrapper grey darken-3">
       <div className="container">         
       <ul className="left" id="logo">          
-        <li ><img src={logo} width="40px"></img></li>
+        <li ><img src={logo} width="40px" alt={"win-win"} /></li>
         <li><Link to='/' className="brand-logo">Win - Win</Link></li>        
       </ul>
         {links}
       </div>
     </nav>
   )
-}
+};
 
 const mapStateToProps = (state) => {
-  // console.log(state);
   return{
     auth: state.firebase.auth,
     profile: state.firebase.profile
   }
-}
+};
 
 export default connect(mapStateToProps)(Navbar)

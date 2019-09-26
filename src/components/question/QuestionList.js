@@ -2,13 +2,13 @@ import React from 'react'
 import QuestionSummary from './QuestionSummary'
 import { Link } from 'react-router-dom'
 
-const QuestionList = ({Questions}) => {
+const QuestionList = ({questions}) => {
   return (
-    <div className="Question-list section">
-      { Questions && Questions.map(Question => {
+    <div className="question-list section">
+      { questions && questions.map(question => {
         return (
-          <Link to={'/Question/' + Question.id} key={Question.id}>
-            <QuestionSummary Question={Question} />
+          <Link to={'/question/' + question.id} key={question.id}>
+            <QuestionSummary question={question} />
           </Link>
         )
       })}  

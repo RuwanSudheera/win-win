@@ -6,19 +6,19 @@ import { Redirect } from 'react-router-dom'
 import moment from 'moment'
 
 const QuestionDetails = (props) => {
-  const { Question, auth } = props;
+  const { question, auth } = props;
   if (!auth.uid) return <Redirect to='/signin' /> 
-  if (Question) {
+  if (question) {
     return (
-      <div className="container section Question-details">
+      <div className="container section question-details">
         <div className="card z-depth-0">
           <div className="card-content">
-            <span className="card-title">{Question.title}</span>
-            <p>{Question.content}</p>s
+            <span className="card-title">{question.title}</span>
+            <p>{question.content}</p>
           </div>
           <div className="card-action grey lighten-4 grey-text">
-            <div>Posted by {Question.authorFirstName} {Question.authorLastName}</div>
-            <div>{moment(Question.createdAt.toDate()).calendar()}</div>
+            <div>Posted by {question.authorFirstName} {question.authorLastName}</div>
+            <div>{moment(question.createdAt.toDate()).calendar()}</div>
           </div>
         </div>
       </div>
@@ -26,19 +26,18 @@ const QuestionDetails = (props) => {
   } else {
     return (
       <div className="container center">
-        <p>Loading Question...</p>
+        <p>Loading question...</p>
       </div>
     )
   }
 }
 
 const mapStateToProps = (state, ownProps) => {
-  // console.log(state);
   const id = ownProps.match.params.id;
-  const Questions = state.firestore.data.Questions;
-  const Question = Questions ? Questions[id] : null
+  const questions = state.firestore.data.questions;
+  const question = questions ? questions[id] : null
   return {
-    Question: Question,
+    question: question,
     auth: state.firebase.auth
   }
 }
@@ -46,6 +45,6 @@ const mapStateToProps = (state, ownProps) => {
 export default compose(
   connect(mapStateToProps),
   firestoreConnect([{
-    collection: 'Questions'
+    collection: 'questions'
   }])
 )(QuestionDetails)
