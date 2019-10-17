@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url(/img/win-win-bg.jpg) no-repeat;
+  background: url(/img/win-win-bg.jpg) fixed;
   background-size: 100%;
   background-position: bottom;
   background-color: #2eb1ff;
@@ -27,8 +27,15 @@ form{
   margin-top: 120px;
 }
 
+.paperHead {
+  padding-top: 20px;
+}
+
 form button, form h5{
   margin: 20px 0;
+}
+.col, .row{
+  float: none;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly]),

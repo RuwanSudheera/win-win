@@ -4,7 +4,6 @@ import {createQuestion} from '../../store/actions/questionActions'
 import {Redirect} from 'react-router-dom'
 import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css/dist/js/materialize.min.js'
-import Select from 'react-select'
 
 class CreateQuestion extends Component {
     state = {
@@ -30,6 +29,7 @@ class CreateQuestion extends Component {
             [e.target.id]: e.target.value
         })
     };
+
     handleChangeOne = (e) => {
         this.setState({
             answers: this.state.answers.push(
@@ -53,9 +53,9 @@ class CreateQuestion extends Component {
             answers: this.state.answers,
             correctAnswer: this.state.correctAnswer
         };
-        //console.log(stateOne);
+        // console.log(stateOne);
         this.props.createQuestion(stateOne);
-        this.props.history.push('/');
+        this.props.history.push('/create');
     };
 
     render() {

@@ -23,10 +23,6 @@ class SignUp extends Component {
 
     render() {
         const {auth, authError} = this.props;
-        // const userTypes = [
-        //     {value: 'student', label: 'Student'},
-        //     {value: 'teacher', label: 'Teacher'}
-        // ];
         if (auth.uid) return <Redirect to='/'/>
         return (
             <div className="container">
@@ -50,22 +46,30 @@ class SignUp extends Component {
                         <label htmlFor="lastName">Last Name</label>
                         <input type="text" id='lastName' onChange={this.handleChange}/>
                     </div>
-                    {/*<div className="input-field">*/}
-                    {/*    <label htmlFor="userType">Select the user type</label>*/}
-                    {/*    <Select id='userType' options={userTypes}/>*/}
-                    {/*</div>*/}
                     <div className="input-field">
                         <div><label><h6>Select the user type</h6 ></label></div>
                         <span>
                             <label>
-                                <input className="with-gap" name="group1" type="radio" id='student' />
+                                <input className="with-gap"
+                                       name="group1"
+                                       type="radio"
+                                       id='userType'
+                                       value='student'
+                                       checked={this.state.userType === "student"}
+                                       onChange={this.handleChange}/>
                                 <span>Student</span>
                             </label>
                         </span>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <span>
                             <label>
-                                <input className="with-gap" name="group1" type="radio" id='teacher' />
+                                <input className="with-gap"
+                                       name="group1"
+                                       type="radio"
+                                       id='userType'
+                                       value='teacher'
+                                       checked={this.state.userType === "teacher"}
+                                       onChange={this.handleChange}/>
                                 <span>Teacher</span>
                             </label>
                         </span>
