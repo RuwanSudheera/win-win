@@ -21,8 +21,10 @@ const SideBar = (props) => {
         return (
             <div className="sidebar">
                 <a href="#home">Home</a>
+                <a href="#examinations">Examinations</a>
                 <a href="#news">News</a>
-                <a href="#contact">Contact</a>
+                <a href="#teachers">Teachers</a>
+                <a href="#contacts">Contacts</a>
                 <a href="#about">About</a>
             </div>
         )

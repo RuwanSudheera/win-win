@@ -6,10 +6,13 @@ import QuestionDetails from './components/question/QuestionDetails'
 import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
 import CreateQuestion from './components/question/CreateQuestion'
-import QuestionPaper from "./components/examination/QuestionPaper";
-import Result from "./components/result/Result";
-import PaperStructure from "./components/paperStructure/paperStructure";
-import UserProfile from "./components/userProfile/userProfile";
+import QuestionPaper from './components/examination/QuestionPaper'
+import Result from "./components/result/Result"
+import PaperStructure from './components/paperStructure/paperStructure'
+import UserProfile from './components/userProfile/userProfile'
+import RequestExam from './components/examination/RequestExam'
+import Chart from './components/result/Chart'
+
 
 class App extends Component {
   render() {
@@ -28,6 +31,8 @@ class App extends Component {
             <Route path='/result' component={Result} />
             <Route path='/paperstructure' component={PaperStructure} />
             <Route path='/userprofie' component={UserProfile} />
+            <Route path='/requestexam' component={RequestExam} />
+            <Route path='/chart' component={Chart} />
             {/*<Route path='/sidebar' component={sideBar} />*/}
             <Route path='/*' component={Dashboard} />
           </Switch>

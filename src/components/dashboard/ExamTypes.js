@@ -24,14 +24,15 @@ class ExamTypes extends Component {
                     <hr style={{width:"auto", height:9, background:"black", border:"none"}} />
                     <br/>
                     <br/>
+                    <img src="./olexamination.jpg" alt=""/>
                     <div className="row">
                         <div className="col s4">
                             <div className="card" style={{height:100}}>
                                 <div className="card-image waves-effect waves-block waves-light">
-                                    <img className="activator" src="images/office.jpg"/>
+                                    <img className="activator" src={require('./images/olexamination.jpg')}/>
                                 </div>
                                 <div className="card-content">
-                                    <span className="card-title activator grey-text text-darken-4">Card Title<i
+                                    <span className="card-title activator grey-text text-darken-4">Ordinary Level<i
                                         className="material-icons right">more_vert</i></span>
                                     <p><a href="#">This is a link</a></p>
                                 </div>
@@ -46,10 +47,10 @@ class ExamTypes extends Component {
                         <div className="col s4">
                             <div className="card" style={{height:100}}>
                                 <div className="card-image waves-effect waves-block waves-light">
-                                    <img className="activator" src="images/office.jpg"/>
+                                    <img src={require('./images/alexamination.jpg')}/>
                                 </div>
                                 <div className="card-content">
-                                    <span className="card-title activator grey-text text-darken-4">Card Title<i
+                                    <span className="card-title activator grey-text text-darken-4">Advanced Level<i
                                         className="material-icons right">more_vert</i></span>
                                     <p><a href="#">This is a link</a></p>
                                 </div>
@@ -64,10 +65,10 @@ class ExamTypes extends Component {
                         <div className="col s4">
                             <div className="card" style={{height:100}}>
                                 <div className="card-image waves-effect waves-block waves-light">
-                                    <img className="activator" src="images/office.jpg"/>
+                                    <img className="activator" src={require('./images/iqexamination.jpg')}/>
                                 </div>
                                 <div className="card-content">
-                                    <span className="card-title activator grey-text text-darken-4">Card Title<i
+                                    <span className="card-title activator grey-text text-darken-4">I/Q examinations<i
                                         className="material-icons right">more_vert</i></span>
                                     <p><a href="#">This is a link</a></p>
                                 </div>

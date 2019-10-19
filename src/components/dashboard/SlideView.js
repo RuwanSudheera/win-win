@@ -8,22 +8,63 @@ class SimpleSlider extends Component {
             <div style={{marginTop:100}} className="container">
                 <Carousel autoPlay>
                     <div style={{borderWidth:5, border:"solid"}}>
-                        <img src="https://aisat.ac.in/wp-content/uploads/2019/01/enterance.png"/>
-                        <p className="legend">Legend 1</p>
+                        <img src={require('./images/img1.webp')}/>
+                        <p className="legend">Care like a teacher</p>
                     </div>
                     <div>
-                        <img src="https://images.all-free-download.com/images/graphiclarge/education_background_
-                        design_with_educational_elements_6824729.jpg"/>
-                        <p className="legend">Legend 2</p>
+                        <img src={require('./images/img2.png')}/>
+                        <p className="legend">Self learning process</p>
                     </div>
                     <div>
-                        <img src="https://thumbs.dreamstime.com/z/test-answer-sheet-pencil-examination-test-
-                        education-conce-test-answer-sheet-pencil-examination-test-education-concept-104750520.jpg"/>
+                        <img src={require('./images/img3.png')}/>
                         <p className="legend">Legend 3</p>
                     </div>
                     <div>
-                        <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.
-                        com%2Fdam%2Fimageserve%2F1040138812%2F960x0.jpg%3Ffit%3Dscale"/>
+                        <img src={require('./images/img4.1.jpg')}/>
+                        <p className="legend">Legend 4</p>
+                    </div>
+                    <div>
+                        <img src={require('./images/img4.3.png')}/>
+                        <p className="legend">Legend 4</p>
+                    </div>
+                    <div>
+                        <img src={require('./images/img5.jpg')}/>
+                        <p className="legend">Legend 4</p>
+                    </div>
+                    <div>
+                        <img src={require('./images/img6.png')}/>
+                        <p className="legend">Legend 4</p>
+                    </div>
+                    <div>
+                        <img src={require('./images/img7.jpg')}/>
+                        <p className="legend">Legend 4</p>
+                    </div>
+                    <div>
+                        <img src={require('./images/img8.jpg')}/>
+                        <p className="legend">Legend 4</p>
+                    </div>
+                    <div>
+                        <img src={require('./images/img9.jpg')}/>
+                        <p className="legend">Legend 4</p>
+                    </div>
+                    <div>
+                        <img src={require('./images/img10.jpg')}/>
+                        <p className="legend">Legend 4</p>
+                    </div>
+                    <div>
+                        <img src={require('./images/img11.jpg')}/>
+                        <p className="legend">Legend 4</p>
+                    </div>
+                    <div>
+                        <img src={require('./images/img12.jpg')}/>
+                        <p className="legend">Legend 4</p>
+                    </div>
+                    <div>
+                        <img src={require('./images/img13.jpg')}/>
+                        <p className="legend">Legend 4</p>
+                    </div>
+                    <div>
+                        <img src={require('./images/img14.jpg')}/>
                         <p className="legend">Legend 4</p>
                     </div>
                 </Carousel>
