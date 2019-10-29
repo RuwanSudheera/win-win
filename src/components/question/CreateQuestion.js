@@ -69,12 +69,10 @@ class CreateQuestion extends Component {
                     <div className="input-field">
                         <select value={this.state.grade} onChange={this.handleChange} id="grade" required={'required'}>
                             <option value="grade">Select The Grade</option>
-                            <option value="grade6">Grade 6</option>
-                            <option value="grade7">Grade 7</option>
-                            <option value="grade8">Grade 8</option>
-                            <option value="grade9">Grade 9</option>
-                            <option value="grade10">Grade 10</option>
-                            <option value="grade11">Grade 11 Ordinary level</option>
+                            <option value="grade5">Grade 5</option>
+                            <option value="grade11">Grade 11</option>
+                            <option value="grade13">Grade 13</option>
+                            <option value="iq">IQ test</option>
                         </select>
                     </div>
                     <div className="input-field">

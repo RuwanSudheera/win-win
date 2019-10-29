@@ -16,6 +16,7 @@ import Footer from './Footer'
 class Dashboard extends Component {
     render() {
         const {questions, auth, notifications} = this.props;
+        //const auth = this.props;
         if (!auth.uid) return <Redirect to='/signin'/>
 
         return (
@@ -24,13 +25,11 @@ class Dashboard extends Component {
                     <SideBar/>
                 </div>
                 <div className="row" style={{marginLeft: 200, marginTop: 60}}>
-                    <SimpleSlider />
-                    <ExamTypes />
-                    <LatestNews />
-                    <TeacherDeatails />
-                </div>
-                <div >
-                    <Footer />
+                    <div id="home"><SimpleSlider /></div>
+                    <div id="examinations"><ExamTypes /></div>
+                    <div id="news"><LatestNews /></div>
+                    <div id="teachers"><TeacherDeatails /></div>
+                    <div id="contacts"><Footer /></div>
                 </div>
             </div>
         )

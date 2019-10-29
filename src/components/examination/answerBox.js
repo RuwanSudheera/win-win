@@ -1,4 +1,5 @@
 import React from 'react';
+import QuestionBox from "./QuestionBox";
 
 const AnswerBox = ({questionIndex, responseIndex}) => {
 
@@ -65,6 +66,11 @@ const AnswerBox = ({questionIndex, responseIndex}) => {
                             </tr>
                             </tbody>
                         </table>
+                        <div className="container">
+                            <div style={{textAlign:'center', marginTop:20}}>
+                                <button className="waves-light btn"> Submit</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

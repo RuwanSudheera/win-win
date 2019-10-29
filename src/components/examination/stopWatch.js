@@ -9,9 +9,7 @@ class StopWatch extends Component {
             second: 0
         };
     }
-    componentDidMount() {
 
-    }
     styleBtn = {
         backgroundColor: "#4d94ff",
         alignItems: "center"

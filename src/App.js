@@ -10,9 +10,7 @@ import QuestionPaper from './components/examination/QuestionPaper'
 import Result from "./components/result/Result"
 import PaperStructure from './components/paperStructure/paperStructure'
 import UserProfile from './components/userProfile/userProfile'
-import RequestExam from './components/examination/RequestExam'
-import Chart from './components/result/Chart'
-
+import ResultLoader from './components/result/ResultLoader'
 
 class App extends Component {
   render() {
@@ -31,9 +29,7 @@ class App extends Component {
             <Route path='/result' component={Result} />
             <Route path='/paperstructure' component={PaperStructure} />
             <Route path='/userprofie' component={UserProfile} />
-            <Route path='/requestexam' component={RequestExam} />
-            <Route path='/chart' component={Chart} />
-            {/*<Route path='/sidebar' component={sideBar} />*/}
+            <Route path='/results' component={ResultLoader} />
             <Route path='/*' component={Dashboard} />
           </Switch>
         </div>

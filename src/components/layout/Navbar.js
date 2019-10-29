@@ -23,8 +23,8 @@ const Navbar = (props) => {
     <nav className="nav-wrapper teal lighten-1 navbar">
       <div className="container nav">
       <ul className="left" id="logo">          
-        <li ><img src={logo} width="40px" alt={"win-win"} /></li>
-        <li><Link to='/' className="brand-logo">Win - Win</Link></li>        
+        <li ><img src={logo} width="55px" alt={"win-win"} /></li>
+        <li style={{marginLeft:15}}><Link to='/' className="brand-logo">Win - Win</Link></li>
       </ul>
         {links}
       </div>

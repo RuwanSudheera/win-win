@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import ReactPlayer from 'react-player'
 
 class ExamTypes extends Component {
     render() {
@@ -14,10 +13,13 @@ class ExamTypes extends Component {
                             Welcome to the Win-Win educational Platform
                         </h3>
                         <br/>
-                        <h6 style={{textAlign:"justify"}}>“Students do not learn much just sitting in classes listening to teachers, memorizing
-                            prepackaged assignments, and spitting out answers. They must talk about what they are
-                            learning, write reflectively about it, relate it to past experiences, and apply it to
-                            their daily lives. They must make what they learn part of themselves.”</h6>
+                        <div className="container">
+                            <h5 style={{textAlign:"justify"}}>“Students do not learn much just sitting in classes listening to teachers, memorizing
+                                prepackaged assignments, and spitting out answers. They must talk about what they are
+                                learning, write reflectively about it, relate it to past experiences, and apply it to
+                                their daily lives. They must make what they learn part of themselves.”
+                            </h5>
+                        </div>
                     </div>
                     <br/>
                     <br/>
@@ -29,12 +31,12 @@ class ExamTypes extends Component {
                         <div className="col s4">
                             <div className="card" style={{height:100}}>
                                 <div className="card-image waves-effect waves-block waves-light">
-                                    <img className="activator" src={require('./images/olexamination.jpg')}/>
+                                    <img className="activator" src={require('./images/olexamination.jpg')} alt=""/>
                                 </div>
                                 <div className="card-content">
                                     <span className="card-title activator grey-text text-darken-4">Ordinary Level<i
                                         className="material-icons right">more_vert</i></span>
-                                    <p><a href="#">This is a link</a></p>
+                                    <p><a href="http://localhost:3006/examination">Get exam paper</a></p>
                                 </div>
                                 <div className="card-reveal">
                                     <span className="card-title grey-text text-darken-4">Card Title<i
@@ -47,12 +49,12 @@ class ExamTypes extends Component {
                         <div className="col s4">
                             <div className="card" style={{height:100}}>
                                 <div className="card-image waves-effect waves-block waves-light">
-                                    <img src={require('./images/alexamination.jpg')}/>
+                                    <img src={require('./images/alexamination.jpg')} alt=""/>
                                 </div>
                                 <div className="card-content">
                                     <span className="card-title activator grey-text text-darken-4">Advanced Level<i
                                         className="material-icons right">more_vert</i></span>
-                                    <p><a href="#">This is a link</a></p>
+                                    <p><a href="http://localhost:3006/examination">Get exam paper</a></p>
                                 </div>
                                 <div className="card-reveal">
                                     <span className="card-title grey-text text-darken-4">Card Title<i
@@ -65,12 +67,12 @@ class ExamTypes extends Component {
                         <div className="col s4">
                             <div className="card" style={{height:100}}>
                                 <div className="card-image waves-effect waves-block waves-light">
-                                    <img className="activator" src={require('./images/iqexamination.jpg')}/>
+                                    <img className="activator" src={require('./images/iqexamination.jpg')} alt=""/>
                                 </div>
                                 <div className="card-content">
                                     <span className="card-title activator grey-text text-darken-4">I/Q examinations<i
                                         className="material-icons right">more_vert</i></span>
-                                    <p><a href="#">This is a link</a></p>
+                                    <p><a href="http://localhost:3006/examination">Get exam paper</a></p>
                                 </div>
                                 <div className="card-reveal">
                                     <span className="card-title grey-text text-darken-4">Card Title<i

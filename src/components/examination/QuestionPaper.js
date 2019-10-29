@@ -121,17 +121,6 @@ class QuestionPaper extends Component {
                         <Col md={3}>
                             <div className="leftRaw">
                                 <StopWatch />
-                                {/*<div>*/}
-                                {/*    {this.state.answerBank && this.state.answerBank.map(*/}
-                                {/*        ({questionIndex, responseIndex}) =>*/}
-                                {/*            (*/}
-                                {/*                <AnswerBox*/}
-                                {/*                    questionID = {questionIndex}*/}
-                                {/*                    responseID = {responseIndex}*/}
-                                {/*                />*/}
-                                {/*            )*/}
-                                {/*    )}*/}
-                                {/*</div>*/}
                                 <AnswerBox />
                             </div>
                         </Col>
